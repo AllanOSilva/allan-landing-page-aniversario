@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Contagem Regressiva para aniversário</title>
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <img class="hero__logo" src="./images/meulogo.svg" alt="LOGO">
+            <p class="hero__text">
+                Venha se divertir e comemorar o meu aniversário em <span id="contador"></span>
+            </p>
+            <p class="hero__text">Aniversariante: Állan</p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos_item">
+                        <b>Localização</b>
+                        Parque Madureira - Rio de Janeiro - RJ
+                    </li>
+                    <li class="infos-bar__infos_item">
+                        <b>Preço</b>
+                        A partir de R$ 40,00
+                    </li>
+                    <li class="infos-bar__infos_item">
+                        <b>Quando</b>
+                        11/7/2025 às 19hrs
+                    </li>
+                </ul>
+                <a class="button button--primary" href="#">Garanta sua vaga</a>
+            </div>
+        </div>
+    </header>
+    <section class="event event--karaoke" >
+        <div class="container" data-aos="zoom-in-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Karaokê Liberado</h2>
+                <p class="event__details__description">
+                    Se você ama cantar ou simplesmente quer se divertir com amigos, esse evento é para você! Venha mostrar seu talento no palco ou apenas curtir as performances dos outros. Não importa se você é um cantor profissional ou um amante de chuveiro, o importante é participar e se divertir!
+                </p>
+            </div>
+            <img class="event__image" src="./images/karaoke.jpg" alt="karaoke">
+        </div>
+    </section>
+    <section class="event event--danca-cadeiras event--image-left" >
+        <div class="container" data-aos="zoom-in-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Danças das Cadeiras</h2>
+                <p class="event__details__description">
+                    Se você adora desafios e quer reviver uma das brincadeiras mais clássicas e divertidas, esse evento é para você! Venha participar da Dança das Cadeiras, uma competição que promete muita emoção, risadas e momentos inesquecíveis. Traga seus amigos e familiares para uma noite cheia de diversão e música!
+                </p>
+            </div>
+            <img class="event__image" src="./images/danca-cadeiras.jpg" alt="danca-cadeiras">
+        </div>
+    </section>
+    <section class="event event--arcade" >
+        <div class="container" data-aos="zoom-in-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Arcade Liberado</h2>
+                <p class="event__details__description">
+                    Se você é um apaixonado por jogos ou simplesmente quer reviver os momentos mágicos da infância, esse evento é para você! Venha desafiar seus amigos, testar suas habilidades e mergulhar em uma experiência única cheia de máquinas de arcade clássicas e modernas. É diversão garantida para todas as idades!
+                </p>
+            </div>
+            <img class="event__image" src="./images/arcade.jpg" alt="arcade">
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>

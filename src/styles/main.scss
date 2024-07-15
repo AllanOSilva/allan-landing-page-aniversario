@@ -1,0 +1,155 @@
+@use 'variaveis';
+@use '_hero';
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Roboto , sans-serif;
+    color: variaveis.$textColor;
+    list-style: none;
+}
+
+.container{
+    max-width: 960px;
+    width: 100%;
+    margin:  0 auto;
+
+    @media (max-width: 640px) {
+        max-width: 50%;
+        
+    }
+
+    @media (max-width: 1024px) {
+        max-width: 90%;
+    }
+}
+
+// consiguraçao da barra de informações!!
+.infos-bar{
+    padding: 16px 24px;
+    background-color: variaveis.$textColor ;
+    display: flex;
+    justify-content: space-between;
+    
+
+    &__infos{
+        display: flex;
+        gap: 40px;
+        
+
+        &_item{
+            color: variaveis.$secondaryTextColor;
+            text-decoration: none;
+            font-size: 14px;
+
+            b{
+                font-size: 18px;
+                color: variaveis.$secondaryTextColor;
+                display: block;
+                
+            }
+        }
+    }
+
+    @media(max-width:640px) {
+        display: block;
+
+        &__infos{
+            display: block;
+
+            &_item{
+                margin-bottom: 24px;
+            }
+        }
+    }
+
+    @media (max-width:1024px){
+        &__infos{
+            gap: 16px;
+        }
+
+    }
+}
+
+// configurando o botão do info bar
+
+.button{
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    border: 1px solid darkgreen;
+    
+
+    &--primary{
+        color: variaveis.$textColor;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        background-color: variaveis.$botao;
+        text-decoration: none;
+    }
+    @media(max-width:640px){
+        display: flex;
+        align-items: center;
+        width: 90%;
+        
+    }
+}
+
+// configurando a seção eventos
+.event{
+    
+    padding: 80px 0;
+
+    &--karaoke{
+        background-image: linear-gradient( variaveis.$blue1, variaveis.$blue2);
+    }
+    &--danca-cadeiras{
+        background-image: linear-gradient( variaveis.$blue2, variaveis.$pink);
+    }
+    &--arcade{
+        background-image: linear-gradient( variaveis.$pink, variaveis.$yellow);
+    }
+    &--backend{
+        background-image: linear-gradient( variaveis.$yellow, variaveis.$pink);
+    }
+
+    &--image-left{
+        .container{
+            flex-direction: row-reverse;
+        }
+    }
+    // background-color: green;
+    .container{
+        display: flex;
+        gap: 40px;
+    }
+    &__image{
+        max-width: 360px;
+    }
+    &__details{
+        
+        &__title{
+            margin-bottom:16px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        &__description{
+            line-height: 22px;
+        }
+    }
+    @media (max-width:640px){
+        .container{
+            display: block;
+        }
+        &__image{
+            width: 90%;
+        }
+        &__details{
+            margin-right: 0;
+            margin-bottom: 16px;
+        }
+    }
+}
